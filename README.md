@@ -25,3 +25,48 @@ Open your terminal or command prompt and run:
 ```bash
 git clone https://github.com/ishita-ux/PhishScan.git
 cd PhishScan
+2. Install Dependencies
+
+Make sure you have Python installed (version 3.6+ recommended). Then install required packages:
+
+pip install -r requirements.txt
+
+3. Run the Scanner
+
+Run the main Python script:
+
+python main.py
+
+You will be prompted to enter a URL for scanning. The tool will then perform checks and display the results in a colorful, emoji-enhanced table.
+Example Usage
+
+🔗 Enter URL to scan: https://example-phishing-site.com
+
+📋 Scan Summary:
+╒═════════════════════════════╤════════════════════════════════╕
+│ Feature                     │ Result                         │
+╞═════════════════════════════╪════════════════════════════════╡
+│ 🔐 HTTPS Used               │ Yes (⚠️ Can still be phishing) │
+│ 🔒 SSL Issuer               │ Let's Encrypt                  │
+│ 📛 Certificate CN           │ example-phishing-site.com      │
+│ 📆 SSL Expiry Date          │ 2025-06-20                     │
+│ ⏳ Days Until Expiry        │ 14 days                        │
+│ ⚠️ SSL Warning              │ Certificate expires soon!      │
+│ 🚫 Blacklisted Domain       │ No                            │
+│ 🌐 Domain Name             │ example-phishing-site.com      │
+│ 📡 Resolved IP              │ 192.0.2.1                     │
+│ ⚠️ Uses IP Instead of Domain │ No                            │
+│ ⚠️ URL Contains Encoding    │ No                            │
+│ 📏 URL Length > 75          │ No                            │
+│ ⚠️ Contains '@' Symbol      │ No                            │
+│ 📅 Domain Age               │ 120 days (Young)               │
+╘═════════════════════════════╧════════════════════════════════╛
+
+Contributions
+
+Feel free to fork the repository, suggest improvements, or add features via pull requests.
+License
+
+This project is open-source and free to use.
+
+Made with ❤️ by Ishita Arya
