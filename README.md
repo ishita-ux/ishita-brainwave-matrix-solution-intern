@@ -21,24 +21,14 @@ How to Download and Use
 
 Open your terminal or command prompt and run:
 
-git clone https://github.com/your-username/PhishScan.git
+git clone https://github.com/ishita-ux/PhishScan.git
 cd PhishScan
-
-(Replace your-username with your actual GitHub username)
-2. Install Dependencies
-
-Make sure you have Python installed (version 3.6+ recommended). Then install required packages:
-
-pip install -r requirements.txt
-
-3. Run the Scanner
-
+pip3 install -r requirements.txt
 Run the main Python script:
-
-python main.py
+python3 main.py
 
 You will be prompted to enter a URL for scanning. The tool will then perform checks and display the results in a colorful, emoji-enhanced table.
-Example Usage
+
 
 🔗 Enter URL to scan: https://example-phishing-site.com
 
